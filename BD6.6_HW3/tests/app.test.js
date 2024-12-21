@@ -43,7 +43,7 @@ describe("API Endpoints Testing", () => {
             },
         ];
         getAllBooks.mockReturnValue(books);
-        let result = await request(server).get("/books");
+        let result = await request(server).get("/BD6.6_HW3/books");
         expect(result.status).toBe(200);
         expect(result.body).toEqual({ books });
     });
@@ -56,7 +56,7 @@ describe("API Endpoints Testing", () => {
             genre: "Fiction",
         };
         getBookByID.mockReturnValue(book);
-        let result = await request(server).get("/books/details/1");
+        let result = await request(server).get("/BD6.6_HW3/books/details/1");
         expect(result.status).toBe(200);
         expect(result.body).toEqual({ book: book });
     });
