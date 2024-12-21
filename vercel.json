@@ -6,6 +6,6 @@
   ],
   "rewrites": [
     { "source": "/BD6.6_CW/(.*)", "destination": "BD6.6_CW/server.js" },
-    { "source": "BD6.6_HW1/(.*)", "destination": "BD6.6_HW1/server.js" }
+    { "source": "/BD6.6_HW1/(.*)", "destination": "BD6.6_HW1/server.js" }
   ]
 }
