@@ -5,7 +5,7 @@
     { "src": "BD6.6_HW1/server.js", "use": "@vercel/node" }
   ],
   "rewrites": [
-    { "source": "/BD6.6_CW/employees", "destination": "BD6.6_CW/server.js" },
-    { "source": "BD6.6_HW1/movies", "destination": "BD6.6_HW1/server.js" }
+    { "source": "/(.*)", "destination": "BD6.6_CW/server.js" },
+    { "source": "/(.*)", "destination": "BD6.6_HW1/server.js" }
   ]
 }
