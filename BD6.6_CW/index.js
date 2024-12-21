@@ -8,13 +8,13 @@ app.use(cors());
 app.use(express.json());
 
 //Endpoint to get all employees
-app.get("/employees", async (req, res) => {
+app.get("/BD6.6_CW/employees", async (req, res) => {
   const employees = getAllEmployees();
   res.json({ employees });
 });
 
 //Endpoint to get employee details by id
-app.get("/employees/details/:id", async (req, res) => {
+app.get("/BD6.6_CW/employees/details/:id", async (req, res) => {
   let employee = getEmployeesById(parseInt(req.params.id));
 
   res.json({ employee });

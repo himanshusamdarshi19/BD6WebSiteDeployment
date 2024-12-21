@@ -59,7 +59,7 @@ describe("Controller Function tests", () => {
 
 describe("API Endpoint tests", () => {
   it("GET /employees should get all employees", async () => {
-    const res = await request(server).get("/employees");
+    const res = await request(server).get("/BD6.6_CW/employees");
     expect(res.status).toBe(200);
     expect(res.body).toEqual({
       employees: [
@@ -90,7 +90,7 @@ describe("API Endpoint tests", () => {
   });
 
   it("GET /employees/details/:id should get an employee by ID", async () => {
-    const res = await request(server).get("/employees/details/1");
+    const res = await request(server).get("/BD6.6_CW/employees/details/1");
     expect(res.status).toBe(200);
     expect(res.body).toEqual({
       employee: {

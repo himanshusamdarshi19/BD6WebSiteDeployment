@@ -91,7 +91,7 @@ describe("API Endpoint Tests", () => {
       },
     ];
 
-    let result = await request(server).get("/movies");
+    let result = await request(server).get("/BD6.6_HW1/movies");
     expect(result.status).toBe(200);
     expect(result.body).toEqual({ result: movieData });
   });
@@ -103,7 +103,7 @@ describe("API Endpoint Tests", () => {
       genre: "Sci-Fi",
       director: "Christopher Nolan",
     };
-    let result = await request(server).get("/movies/details/1");
+    let result = await request(server).get("/BD6.6_HW1/movies/details/1");
     expect(result.status).toBe(200);
     expect(result.body).toEqual({ result: movie });
   });
