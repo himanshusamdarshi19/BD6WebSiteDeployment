@@ -3,11 +3,13 @@
   "builds": [
     { "src": "BD6.6_CW/server.js", "use": "@vercel/node" },
     { "src": "BD6.6_HW1/server.js", "use": "@vercel/node" },
-    { "src": "BD6.6_HW2/server.js", "use": "@vercel/node" }
+    { "src": "BD6.6_HW2/server.js", "use": "@vercel/node" },
+    { "src": "BD6.6_HW3/server.js", "use": "@vercel/node" }
   ],
   "rewrites": [
     { "source": "/BD6.6_CW/(.*)", "destination": "BD6.6_CW/server.js" },
     { "source": "/BD6.6_HW1/(.*)", "destination": "BD6.6_HW1/server.js" },
-    { "source": "/BD6.6_HW2/(.*)", "destination": "BD6.6_HW2/server.js" }
+    { "source": "/BD6.6_HW2/(.*)", "destination": "BD6.6_HW2/server.js" },
+    { "source": "/BD6.6_HW3/(.*)", "destination": "BD6.6_HW3/server.js" }
   ]
 }
